@@ -1,3 +1,142 @@
-<html>
-hello world 123
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+</style>
+
+<body style="background-color: white;color: black;">
+  </div>
+    <button id="btn" onclick="changetheme()">Dark</button>
+
+
+<div class="container">
+    <header>
+        <h1 style="text-align: center;">Sani Desale</h1>
+        <p>Email
+            <a href=" ">sanidesale2002@gmail.com</a>
+        </p>
+      
+        <p> Phone: 9373888314 | Location: Jalgaon, Maharastra</p>
+    </header>
+
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Aspiring Software Developer with a Computer Engineering Degree and possessing strong foundational programming knowledge. Good knowledge of web development as well as back-end technologies, databases, and some methodologies like SDLC. Passion for learning new technologies. Good Knowledge of Microsoft Excel and demonstrate collaborative abilities and seek to contribute to web projects while learning from mentors.</p>
+    </section>
+
+    <section class="section">
+        <h2></h2>
+    </section>
+
+     <section class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Class 10th</strong> - JayHind Madyamik Vidyalaya (2018)<br>
+                <em>Chalisgoan</em>
+            </li>
+            <li>
+                <strong>Deploma</strong> - Sav Santidevi Chavan Polytechnic(2021)<br>
+                <em>Mohili Shahapur</em>
+            </li>
+            <li>
+                <strong>Degree</strong> - Atma Malik Institute of Technology and Research (2024)<br>
+                <em>Chalisgaon</em>
+            </li>
+           
+            
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>1. Java </li>
+            <li>2. Sql</li>
+            <li>3. JavaScript </li>
+            
+           
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                1. Car Rental System.
+            </li>
+            <li>
+                2. Student Registration Login System.
+            </li>
+        </ul>
+    </section>
+    <section class="section">
+        <h2>Certification</h2>
+        <ul>
+        <li>
+             1 Java From Shree Computer Academy <br> 2 SQl from Great Learning Academy <br>
+        </li>
+    </ul>
+    </section>
+</div>
+<script>
+    const btnElem = document.getElementById("btn");
+    const bodyElem = document.getElementsByTagName('body');
+    let isDark = false;
+    function changetheme() {
+        if(isDark) {
+            bodyElem[0].style.backgroundColor = 'white';
+            bodyElem[0].style.color = 'Black';
+            btnElem.innerText = 'Light';
+        }else{
+            bodyElem[0].style.backgroundColor = 'black';
+            bodyElem[0].style.color = 'black';
+            btnElem.innerText = 'Dark';
+        }
+        isDark = !isDark;
+    }
+    </script>
+
+
+</body>
+
+
 </html>
